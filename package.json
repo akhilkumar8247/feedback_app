@@ -1,0 +1,18 @@
+{
+  "name": "feedback_app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install --workspaces",
+    "dev": "concurrently \"npm run dev --workspace backend\" \"npm run dev --workspace project\"",
+    "build": "npm run build --workspace project",
+    "start": "npm run start --workspace backend"
+  },
+  "workspaces": [
+    "backend",
+    "project"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
