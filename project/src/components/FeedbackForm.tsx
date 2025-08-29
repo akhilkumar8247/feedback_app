@@ -67,7 +67,7 @@ const FeedbackForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("http://localhost:5000/feedback", {
+      const res = await fetch("/.netlify/functions/submitFeedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
