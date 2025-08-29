@@ -18,7 +18,7 @@ avoiding the need to create separate feedback systems for each new project.
 
 ## 📂 Project Structure
 feedback_app/
-│── backend/ # Node.js + Express server
+│── backend/ Netlify/ Functions/ # Node.js + Express server
 │── project/ # React + TypeScript frontend
 │── package.json # Project dependencies
 │── .gitignore
@@ -39,20 +39,14 @@ feedback_app/
    git clone https://github.com/akhilkumar8247/feedback_app.git
    cd feedback_app
 
-cd backend
-npm install
-
 cd ../project
 npm install
-
-cd backend
-node server.js
 
 cd project
 npm run dev
 
 Frontend will be available at http://localhost:5173 (or similar)
-Backend will be running at http://localhost:3000
+Netlify will be running at http://localhost:65531
 
 Tech Stack
 Frontend: React, TypeScript, Vite
